@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1024px; height:1024px; overflow:hidden; }
+  body { font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif; background:#0a0f1a; color:#eaf1fb; position:relative; }
+  .wrap { position:absolute; inset:0; padding:24px 28px 18px; display:flex; flex-direction:column; gap:12px; }
+  header { display:flex; align-items:center; justify-content:space-between; border-bottom:4px solid #1f6feb; padding-bottom:12px; }
+  .k { font-size:12px; letter-spacing:.5em; color:#4da3ff; font-weight:800; }
+  h1 { font-size:62px; line-height:.95; font-weight:900; letter-spacing:-.02em; margin-top:3px; }
+  h1 .d { color:#1f6feb; }
+  .daybox { text-align:right; }
+  .daybox b { display:block; font-size:46px; line-height:1; color:#fff; letter-spacing:.02em; }
+  .daybox span { font-size:12px; letter-spacing:.28em; color:#8aa0bd; }
+  .hero { display:flex; gap:16px; background:linear-gradient(100deg,#12233d,#0d1a2d); border:1px solid #234066; border-radius:16px; padding:16px 18px; }
+  .heroart { flex:0 0 250px; height:158px; }
+  .herotxt { flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .herotxt .tag { font-size:11px; letter-spacing:.2em; color:#ffb454; font-weight:800; }
+  .herotxt h2 { font-size:34px; line-height:1.05; margin:5px 0 8px; }
+  .herotxt p { font-size:15px; line-height:1.3; color:#b9cbe2; }
+  .grid { flex:1; display:grid; grid-template-columns:repeat(2,1fr); grid-template-rows:repeat(3,1fr); gap:11px; }
+  .card { background:#101a2b; border:1px solid #223654; border-left:5px solid var(--c); border-radius:10px; padding:11px 14px; display:flex; gap:12px; align-items:center; }
+  .card .num { flex:0 0 40px; font-size:30px; font-weight:900; color:var(--c); opacity:.85; }
+  .card .body { flex:1; }
+  .card .tag { font-size:10px; letter-spacing:.16em; font-weight:800; color:var(--c); text-transform:uppercase; }
+  .card h3 { font-size:18.5px; line-height:1.08; margin:3px 0 5px; }
+  .card p { font-size:13px; line-height:1.24; color:#adbfd6; }
+  footer { display:flex; justify-content:space-between; align-items:center; color:#7f91ad; font-size:11.5px; padding-top:2px; letter-spacing:.03em; }
+  footer b { color:#b9c8dd; }
+  .stamp { font-weight:900; color:#4da3ff; letter-spacing:.24em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="k">The world &middot; one day &middot; one image</div>
+      <h1><span class="d">19</span> NOVEMBER 2026</h1>
+    </div>
+    <div class="daybox"><b>19.11.26</b><span>THURSDAY &middot; SIX STORIES</span></div>
+  </header>
+
+  <div class="hero">
+    <div class="heroart">
+      <svg width="250" height="158" viewBox="0 0 250 158" fill="none">
+        <circle cx="45" cy="58" r="20" fill="#3f5169"/><path d="M12 130c0-16 14-28 33-28s33 12 33 28v8H12v-8Z" fill="#4d6079"/>
+        <circle cx="125" cy="46" r="26" fill="#64799a"/><path d="M83 136c0-22 18-38 42-38s42 16 42 38v6H83v-6Z" fill="#7b91b3"/>
+        <circle cx="205" cy="58" r="20" fill="#3f5169"/><path d="M172 130c0-16 14-28 33-28s33 12 33 28v8h-66v-8Z" fill="#4d6079"/>
+        <rect x="12" y="142" width="226" height="4" rx="2" fill="#2c3a50"/>
+        <path d="M45 26l2-7 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z" fill="#ffb454"/>
+        <path d="M205 26l2-7 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z" fill="#4da3ff"/>
+        <text x="125" y="76" font-family="Arial" font-size="12" font-weight="800" fill="#ffe08a" text-anchor="middle">APEC &middot; SHENZHEN</text>
+      </svg>
+    </div>
+    <div class="herotxt">
+      <div class="tag">Lead &middot; World</div>
+      <h2>Trump, Xi and Putin hold historic three-way summit</h2>
+      <p>The US, Chinese and Russian leaders meet for the first formal trilateral, on the sidelines of APEC in Shenzhen, with Ukraine, trade and AI on the agenda and Xi pledging $20m to regional co-operation.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card" style="--c:#4da3ff">
+      <div class="num">01</div><div class="body">
+      <div class="tag">Technology &middot; Markets</div>
+      <h3>Anthropic valued at up to $1.5tn before its IPO</h3>
+      <p>The maker of Claude prices shares at $83 for a Nasdaq debut over ten times oversubscribed — the first pure-AI US firm to list.</p>
+    </div></div>
+
+    <div class="card" style="--c:#ff8fb1">
+      <div class="num">02</div><div class="body">
+      <div class="tag">Europe &middot; Crimea</div>
+      <h3>Crimean Bridge attacked again; crossing shut</h3>
+      <p>Russia's head of Crimea says the span to the occupied peninsula was struck once more and closed to all traffic as new footage shows it collapsing.</p>
+    </div></div>
+
+    <div class="card" style="--c:#5fe0a8">
+      <div class="num">03</div><div class="body">
+      <div class="tag">Asia &middot; Myanmar</div>
+      <h3>Myanmar faces landmark UN genocide verdict</h3>
+      <p>The ICJ rules in the Gambia's seven-year case over the 2017 Rohingya expulsion — the first time an international court could find a state guilty of genocide.</p>
+    </div></div>
+
+    <div class="card" style="--c:#ffb454">
+      <div class="num">04</div><div class="body">
+      <div class="tag">Middle East &middot; Gaza</div>
+      <h3>Israel launches rare Gaza raid beyond Yellow Line</h3>
+      <p>Tanks push past the Israeli-held zone near Nuseirat to destroy a tunnel; Hamas calls it a flagrant breach of the October 2025 ceasefire as families flee.</p>
+    </div></div>
+
+    <div class="card" style="--c:#ffd166">
+      <div class="num">05</div><div class="body">
+      <div class="tag">Culture &middot; Art</div>
+      <h3>Van Gogh sets record $190.4m at auction</h3>
+      <p>Sotheby's sells "Ch&acirc;taigniers en fleurs" in New York after a deal over its Nazi-era provenance, smashing the prior $117.2m artist record.</p>
+    </div></div>
+
+    <div class="card" style="--c:#b39dff">
+      <div class="num">06</div><div class="body">
+      <div class="tag">The day &middot; In summary</div>
+      <h3>Six stories that defined 19 November 2026</h3>
+      <p>From a first-ever summit in Shenzhen to a record art sale in New York, here is the world on one page for Thursday, 19 November 2026.</p>
+    </div></div>
+  </div>
+
+  <footer>
+    <div>Sources: <b>BBC &middot; AP &middot; Sotheby's</b> &middot; events of 19 November 2026, any time zone</div>
+    <div class="stamp">WORLD NEWS &middot; 19.11.2026</div>
+  </footer>
+</div>
+</body>
+</html>
